@@ -206,11 +206,43 @@
 .padding-min { padding: 1%; }
 .padding { padding: 2%; }
 .padding-max { padding: 3%; }
+/* top */
+.padding-top-min { padding-top: 1%; }
+.padding-top { padding-top: 2%; }
+.padding-top-max { padding-top: 3%; }
+/* bottom */
+.padding-bottom-min { padding-bottom: 1%; }
+.padding-bottom { padding-bottom: 2%; }
+.padding-bottom-max { padding-bottom: 3%; }
+/* left */
+.padding-left-min { padding-left: 1%; }
+.padding-left { padding-left: 2%; }
+.padding-left-max { padding-left: 3%; }
+/* right */
+.padding-right-min { padding-right: 1%; }
+.padding-right { padding-right: 2%; }
+.padding-right-max { padding-right: 3%; }
 
 .margin-min { margin: 1%; }
 .margin { margin: 2%; }
 .margin-max { margin: 3%; }
 .margin-auto { margin-left: auto; margin-right: auto; }
+/* top */
+.margin-top-min { margin-top: 1%; }
+.margin-top { margin-top: 2%; }
+.margin-top-max { margin-top: 3%; }
+/* bottom */
+.margin-bottom-min { margin-bottom: 1%; }
+.margin-bottom { margin-bottom: 2%; }
+.margin-bottom-max { margin-bottom: 3%; }
+/* left */
+.margin-left-min { margin-left: 1%; }
+.margin-left { margin-left: 2%; }
+.margin-left-max { margin-left: 3%; }
+/* right */
+.margin-right-min { margin-right: 1%; }
+.margin-right { margin-right: 2%; }
+.margin-right-max { margin-right: 3%; }
 
 .float-left { float: left; }
 .float-right { float: right; }
@@ -363,8 +395,8 @@
 .btn-white:hover,
 .btn-white:focus,
 .btn-white.focus,
-.btn-white.active { background-color: #ECF0F1; border-color: #FFFFFF; color: #333; }
-.btn-white.btn-anie-2 { background: transparent; color: #ECF0F1; border-color: #FFFFFF; }
+.btn-white.active { background-color: #FFFFFF; border-color: #FFFFFF; color: #333; }
+.btn-white.btn-anie-2 { background: transparent; color: #FFFFFF; border-color: #FFFFFF; }
 
 /* White 2 */
 .white-2, .white-2-hover:hover, .white-2-focus:focus { background-color: #ECF0F1; color: #333; }
