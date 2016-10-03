@@ -73,11 +73,6 @@
 }
 .card .content .description { font-size: .9em; }
 
-.article {
-  font-size: 1.2em;
-  line-height: 1.42em;
-}
-
 .btn-anie { border-radius: 0 !important; }
 
 .btn-anie-2 {
@@ -147,18 +142,9 @@
 .section { padding: 6% 0; }
 .section-max { padding: 9% 0; }
 
-.title-section {
-  padding-bottom: 6%;
-  text-transform: uppercase;
-  text-align: center;
-}
-.title-section-2 {
-  padding-bottom: 4%;
-  text-align: center;
-}
-.title-section-3 {
-  padding-bottom: 4%;
-  text-transform: uppercase;
+.article {
+  font-size: 1.2em;
+  line-height: 1.42em;
 }
 
 .text-calibri { font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif; }
@@ -174,7 +160,7 @@
 .text-verdana { font-family: Verdana, Geneva, sans-serif; }
 .text-georgia { font-family: Georgia, Times, "Times New Roman", serif; }
 .text-lucida { font-family: "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace; }
-.text-timesnr { font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif; }
+.text-times { font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif; }
 .text-lato { font-family: "Lato",Helvetica,Arial,sans-serif; }
 
 .text-small, .text-small-hover:hover { font-size: .82em; }
@@ -362,6 +348,8 @@
 }
 
 /* --- COLORS --- */
+
+.transparent { background: transparent; }
 
 .gradient { background-image: linear-gradient(to bottom, rgba(212,212,212,.4), transparent); }
 .gradient-hover:hover { background-image: linear-gradient(to bottom, rgba(212,212,212,.4), transparent); }
