@@ -8,32 +8,46 @@
     <meta name="Resource-type" content="document">
     <meta name="Robots" content="all">
     <meta name="Rating" content="general">
-    <title>Anie CSS</title>
-    <meta name="description" content="Módulo CSS para Bootstrap com novos elementos, cores, efeitos e formatações">
-    <meta name="author" content="Anie">
+    <title>Anie</title>
+    <meta name="description" content="Anie CSS">
+    <meta name="author" content="Gabriel Masson">
     <meta name="keywords" content="Anie, framework, css, bootstrap">
     <link href="img/favicon.png" rel="shortcut icon" type="image/x-icon">
-
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href="css/anie.css" rel="stylesheet" type="text/css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <style type="text/css">
+      footer { border-top: 1px solid #eee; margin-top: 8%; }
+      .feature { padding: 1% 0; margin: 1% 0; }
+    </style>
   </head>
   <body>
-  
-    <header class="padding-max text-center">
-      <img src="img/logo.png" class="w10">
-      <h1 class="text-purple-3">Anie CSS</h1>
-      <p>Módulo CSS para Bootstrap</p>
-    </header>
-
-    <section class="padding-max text-center">
-      <a href="https://github.com/gmasson/anie/archive/master.zip" class="btn btn-anie-2 btn-purple-2">Download <small>0.9</small></a>
-      <a href="doc/" class="btn btn-anie-2 btn-grey-3">Documentação</a>
-      <a href="examples/" class="btn btn-anie-2 btn-grey-3">Exemplos</a>
-      <a href="https://github.com/gmasson/anie" class="btn btn-anie-2 btn-grey-3" target="_blank">Github</a>
+    <section class="area">
+      <div class="padding-max">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="menu padding">
+              <br>
+              <button id="introducao" class="btn btn-block transparent btn-white-2-hover btn-anie">Download</button>
+              <button id="elementos" class="btn btn-block transparent btn-white-2-hover btn-anie">Elementos</button>
+              <button id="formatacoes" class="btn btn-block transparent btn-white-2-hover btn-anie">Formatação</button>
+              <button id="img" class="btn btn-block transparent btn-white-2-hover btn-anie">Imagens</button>
+              <button id="cores" class="btn btn-block transparent btn-white-2-hover btn-anie">Cores</button>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div id="content">Carregando...</div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <footer class="padding-max text-center">
-      Desenvolvido por <a href="https://github.com/gmasson" target="_blank">Gabriel Masson</a>
+    <footer>
+      <div class="padding text-center">
+        Anie 2016 - Desenvolvido por <a href="http://gmasson.com.br" class="text-black" target="_blank">Gabriel Masson</a>
+      </div>
     </footer>
 
   </body>
