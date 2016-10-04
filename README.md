@@ -1,4 +1,4 @@
-# Anie v1.0
+# Anie v1.1
 CSS module for Bootstrap
 
 ### Documentation and details
