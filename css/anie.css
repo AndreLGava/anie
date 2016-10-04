@@ -275,6 +275,12 @@
 .width-95 { width: 95%; }
 .width-100 { width: 100%; }
 
+.fixed,
+.fixed-bottom,
+.fixed-top { position: fixed; }
+.fixed-bottom { bottom: 0; }
+.fixed-top { top: 0; }
+
 /* --- IMG --- */
 
 .img:hover {
