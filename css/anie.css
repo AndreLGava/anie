@@ -277,7 +277,10 @@
 
 .fixed,
 .fixed-bottom,
-.fixed-top { position: fixed; }
+.fixed-top {
+  position: fixed;
+  z-index: 999;
+}
 .fixed-bottom { bottom: 0; }
 .fixed-top { top: 0; }
 
