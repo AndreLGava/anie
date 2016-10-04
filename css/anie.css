@@ -1,5 +1,5 @@
 /*
-  Anie 1.0.4
+  Anie 1.1.0
   https://github.com/gmasson/anie
   License MIT
 */
@@ -274,6 +274,12 @@
 .width-90 { width: 90%; }
 .width-95 { width: 95%; }
 .width-100 { width: 100%; }
+
+.fixed,
+.fixed-bottom,
+.fixed-top { position: fixed; }
+.fixed-bottom { bottom: 0; }
+.fixed-top { top: 0; }
 
 /* --- IMG --- */
 

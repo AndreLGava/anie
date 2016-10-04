@@ -53,23 +53,20 @@
      inkscape:groupmode="layer"
      id="layer1">
     <ellipse
-       style="fill:#bf1c5f;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.57282269px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="fill:#bf1c5f;fill-opacity:0.83076924;fill-rule:evenodd;stroke:none;stroke-width:0.57282269px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="path3340"
-       cx="370.47885"
-       cy="613.44592"
-       rx="358.69897"
-       ry="365.33237" />
-    <text
-       xml:space="preserve"
+       cx="372.76495"
+       cy="621.88525"
+       rx="366.98508"
+       ry="373.7717" />
+    <g
        style="font-style:normal;font-weight:normal;font-size:777.6963501px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="187.41624"
-       y="820.55975"
-       id="text3361"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan3363"
-         x="187.41624"
-         y="820.55975"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:bioliquid;-inkscape-font-specification:bioliquid;fill:#ffffff">A</tspan></text>
+       id="text3361">
+      <path
+         d="m 252.30909,812.30065 q -3.97831,12.73058 -16.7089,18.30022 -11.93492,4.77396 -24.66549,0.79565 -12.73059,-3.9783 -18.30023,-15.91322 -5.56962,-12.73058 -0.79565,-25.46118 L 339.03619,396.96537 q 4.77397,-12.73059 16.70888,-18.30023 12.7306,-5.56962 25.46117,-0.79566 14.32191,4.77397 19.09588,19.09589 l 155.15399,389.07845 q 4.77397,12.73058 -0.79567,25.46117 -4.77396,11.93492 -17.50455,16.70889 -12.73058,3.97831 -25.46116,-0.79566 -11.93493,-4.77398 -16.7089,-17.50456 L 370.86264,498.81003 252.30909,812.30065 Z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:bioliquid;-inkscape-font-specification:bioliquid;fill:#ffffff"
+         id="path3337"
+         inkscape:connector-curvature="0" />
+    </g>
   </g>
 </svg>
