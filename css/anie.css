@@ -1,5 +1,5 @@
 /*
-  Anie 1.1.1
+  Anie 1.1.2
   https://github.com/gmasson/anie
   License MIT
 */
@@ -181,6 +181,10 @@
 .text-bold, .text-bold-hover:hover { font-weight: bold; }
 .text-italic, .text-italic-hover:hover { font-style: italic; }
 .text-underline, .text-underline-hover:hover { text-decoration: underline; }
+
+.text-uppercase, .text-uppercase-hover:hover { text-transform: uppercase; }
+.text-lowercase, .text-lowercase-hover:hover { text-transform: lowercase; }
+.text-capitalize, .text-capitalize-hover:hover { text-transform: capitalize; }
 
 .padding-min { padding: 1%; }
 .padding { padding: 2%; }
