@@ -1,5 +1,5 @@
 /*
-  Anie 1.1.5
+  Anie 1.2
   https://github.com/gmasson/anie
   License MIT
 */
@@ -11,6 +11,7 @@ function back() { window.history.go(-1) }
 function next() { window.history.go(1) }
 function reload() { window.history.go(0) }
 
+/* Add texts to inputs */
 function addtext(idElement, text) {
   var area = document.getElementById(idElement);
   var cursorPosition = area.selectionStart;
@@ -31,11 +32,13 @@ function updatecursorposition(cursorPosition, text, area) {
   area.focus();    
 }
 
+/* Save input texts */
 function savetext(idElement, nameElement) {
   var textscreen = document.getElementById(idElement).value;
   window.localStorage.setItem(nameElement, textscreen);
 }
 
+/* Recover text and inject input */
 function recovertext(idElement, nameElement) {
   var text = window.localStorage.getItem(nameElement);
   if (text == null) { var text = ''; }
