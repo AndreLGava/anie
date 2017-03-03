@@ -15,14 +15,13 @@
 }
 .area-min { max-width: 980px; }
 .area { max-width: 1180px; }
-.area-max { max-width: 2000px; }
-
-.show-print { display: none; }
+.area-max { max-width: 1920px; }
 
 @media print {
   .hide-print { display: none; }
   .show-print { display: block; }
 }
+.show-print { display: none; }
 
 .row-flex {
   display: flex;
@@ -87,7 +86,6 @@ a.img-card:focus {
   cursor: pointer;
   text-align: center;
 }
-a.img-card:hover { text-decoration: underline; }
 a.img-card img {
   width: 100%;
   -moz-border-radius: 7%;
@@ -109,8 +107,11 @@ a.img-card div {
   font-weight: bold;
   text-shadow: black 0 0 .5em;
 }
+a.img-card:hover div { text-decoration: underline; }
 
 .btn-anie {
+  -moz-border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
   border-radius: 0 !important;
   border-width: 3px;
   border-style: solid;
@@ -133,29 +134,18 @@ a.img-card div {
 
 .form-anie input {
   background: transparent !important;
-  border-right-width: 0;
-  border-left-width: 0;
-  border-top-width: 0;
+  border-right-width: 0 !important;
+  border-left-width: 0 !important;
+  border-top-width: 0 !important;
   border-bottom-width: 2px;
   border-bottom-style: solid;
-}
-.form-anie input:hover,
-.form-anie input:focus {
-  background: transparent !important;
-  border-right-width: 0;
-  border-left-width: 0;
-  border-top-width: 0;
-  border-bottom-width: 2px;
-  border-bottom-style: solid;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
   outline: none;
 }
 
 .form-anie-2 input {
-  background: transparent !important;
-  border: 0;
-}
-.form-anie-2 input:hover,
-.form-anie-2 input:focus {
   background: transparent !important;
   border: 0;
   outline: none;
@@ -174,32 +164,16 @@ a.img-card div {
 
 .article-min {
   font-size: .9em;
-  line-height: 1em;
+  line-height: 1.4em;
 }
 .article {
   font-size: 1.2em;
-  line-height: 1.42em;
+  line-height: 1.5em;
 }
 .article-max {
-  font-size: 1.5em;
-  line-height: 2em;
+  font-size: 1.4em;
+  line-height: 1.4em;
 }
-
-.text-calibri { font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif; }
-.text-candara { font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif; }
-.text-arial { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
-.text-cambria { font-family: Cambria, Georgia, serif; }
-.text-century { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; }
-.text-futura { font-family: Futura, "Trebuchet MS", Arial, sans-serif; }
-.text-helvetica { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
-.text-segoeui { font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; }
-.text-tahoma { font-family: Tahoma, Verdana, Segoe, sans-serif; }
-.text-trebuchet { font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; }
-.text-verdana { font-family: Verdana, Geneva, sans-serif; }
-.text-georgia { font-family: Georgia, Times, "Times New Roman", serif; }
-.text-lucida { font-family: "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace; }
-.text-times { font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif; }
-.text-lato { font-family: "Lato",Helvetica,Arial,sans-serif; }
 
 .text-small, .text-small-hover:hover { font-size: .82em; }
 .text-medium, .text-medium-hover:hover { font-size: 1.1em; }
@@ -226,43 +200,43 @@ a.img-card div {
 .opacity, .opacity-hover:hover { opacity: 0.86; -moz-opacity: 0.86; filter: alpha(opacity=0.86); }
 .opacity-max, .opacity-max-hover:hover { opacity: 0.67; -moz-opacity: 0.67; filter: alpha(opacity=0.67); }
 
-.radius-0, .radius-0-hover:hover { 
+.radius-0, .radius-0-hover:hover {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
 }
-.radius-min, .radius-min-hover:hover { 
+.radius-min, .radius-min-hover:hover {
   -moz-border-radius: 7%;
   -webkit-border-radius: 7%;
   border-radius: 7%;
 }
-.radius, .radius-hover:hover { 
+.radius, .radius-hover:hover {
   -moz-border-radius: 18%;
   -webkit-border-radius: 18%;
   border-radius: 18%;
 }
-.radius-max, .radius-max-hover:hover { 
+.radius-max, .radius-max-hover:hover {
   -moz-border-radius: 28%;
   -webkit-border-radius: 28%;
   border-radius: 28%;
 }
-.radius-circle, .radius-circle-hover:hover { 
+.radius-circle, .radius-circle-hover:hover {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
 
-.shadow-min, .shadow-min-hover:hover { 
+.shadow-min, .shadow-min-hover:hover {
   -moz-box-shadow: 0 0 8px #ccc;
   -webkit-box-shadow: 0 0 8px #ccc;
   box-shadow: 0 0 8px #ccc;
 }
-.shadow, .shadow-hover:hover { 
+.shadow, .shadow-hover:hover {
   -moz-box-shadow: 0 0 16px #ccc;
   -webkit-box-shadow: 0 0 16px #ccc;
   box-shadow: 0 0 16px #ccc;
 }
-.shadow-max, .shadow-max-hover:hover { 
+.shadow-max, .shadow-max-hover:hover {
   -moz-box-shadow: 0 0 27px #ccc;
   -webkit-box-shadow: 0 0 27px #ccc;
   box-shadow: 0 0 27px #ccc;
@@ -956,52 +930,60 @@ a.img-card div {
 
 /* --- PLUGIN Animate.css --- */
 
-.animated-duration-050s {
+/* Duration */
+.animated-duration-0-50s {
   -webkit-animation-duration: .50s !important;
+  -ms-animation-duration: .50s !important;
   animation-duration: .50s !important;
 }
 .animated-duration-1s {
   -webkit-animation-duration: 1s !important;
+  -ms-animation-duration: 1s !important;
   animation-duration: 1s !important;
+}
+.animated-duration-1-5s {
+  -webkit-animation-duration: 1.5s !important;
+  -ms-animation-duration: 1.5s !important;
+  animation-duration: 1.5s !important;
 }
 .animated-duration-2s {
   -webkit-animation-duration: 2s !important;
+  -ms-animation-duration: 2s !important;
   animation-duration: 2s !important;
+}
+.animated-duration-2-5s {
+  -webkit-animation-duration: 2.5s !important;
+  -ms-animation-duration: 2.5s !important;
+  animation-duration: 2.5s !important;
 }
 .animated-duration-3s {
   -webkit-animation-duration: 3s !important;
+  -ms-animation-duration: 3s !important;
   animation-duration: 3s !important;
+}
+.animated-duration-3-5s {
+  -webkit-animation-duration: 3.5s !important;
+  -ms-animation-duration: 3.5s !important;
+  animation-duration: 3.5s !important;
 }
 .animated-duration-4s {
   -webkit-animation-duration: 4s !important;
+  -ms-animation-duration: 4s !important;
   animation-duration: 4s !important;
+}
+.animated-duration-4-5s {
+  -webkit-animation-duration: 4.5s !important;
+  -ms-animation-duration: 4.5s !important;
+  animation-duration: 4.5s !important;
 }
 .animated-duration-5s {
   -webkit-animation-duration: 5s !important;
+  -ms-animation-duration: 5s !important;
   animation-duration: 5s !important;
 }
-.animated-duration-6s {
-  -webkit-animation-duration: 6s !important;
-  animation-duration: 6s !important;
-}
-.animated-duration-7s {
-  -webkit-animation-duration: 7s !important;
-  animation-duration: 7s !important;
-}
-.animated-duration-8s {
-  -webkit-animation-duration: 8s !important;
-  animation-duration: 8s !important;
-}
-.animated-duration-9s {
-  -webkit-animation-duration: 9s !important;
-  animation-duration: 9s !important;
-}
-.animated-duration-10s {
-  -webkit-animation-duration: 10s !important;
-  animation-duration: 10s !important;
-}
 
-.animated-delay {
+/* Delay */
+.animated-delay-0-50s {
   -webkit-animation-delay: .50s;
   -ms-animation-delay: .50s;
   animation-delay: .50s;
@@ -1011,33 +993,43 @@ a.img-card div {
   -ms-animation-delay: 1s;
   animation-delay: 1s;
 }
+.animated-delay-1-5s {
+  -webkit-animation-delay: 1.5s;
+  -ms-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
 .animated-delay-2s {
   -webkit-animation-delay: 2s;
   -ms-animation-delay: 2s;
   animation-delay: 2s;
+}
+.animated-delay-2-5s {
+  -webkit-animation-delay: 2.5s;
+  -ms-animation-delay: 2.5s;
+  animation-delay: 2.5s;
 }
 .animated-delay-3s {
   -webkit-animation-delay: 3s;
   -ms-animation-delay: 3s;
   animation-delay: 3s;
 }
+.animated-delay-3-5s {
+  -webkit-animation-delay: 3.5s;
+  -ms-animation-delay: 3.5s;
+  animation-delay: 3.5s;
+}
 .animated-delay-4s {
   -webkit-animation-delay: 4s;
   -ms-animation-delay: 4s;
   animation-delay: 4s;
 }
+.animated-delay-4-5s {
+  -webkit-animation-delay: 4.5s;
+  -ms-animation-delay: 4.5s;
+  animation-delay: 4.5s;
+}
 .animated-delay-5s {
   -webkit-animation-delay: 5s;
   -ms-animation-delay: 5s;
   animation-delay: 5s;
-}
-.animated-delay-6s {
-  -webkit-animation-delay: 6s;
-  -ms-animation-delay: 6s;
-  animation-delay: 6s;
-}
-.animated-delay-7s {
-  -webkit-animation-delay: 7s;
-  -ms-animation-delay: 7s;
-  animation-delay: 7s;
 }

@@ -1,47 +1,84 @@
 /*
-  Anie 1.2
+  Anie 1.2.1
   https://github.com/gmasson/anie
   License MIT
 */
 
+/* Display control */
 function block(id){ document.getElementById(id).style.display="block"; }
 function none(id){ document.getElementById(id).style.display="none"; }
-function print() { window.print() }
-function back() { window.history.go(-1) }
-function next() { window.history.go(1) }
-function reload() { window.history.go(0) }
 
-/* Add texts to inputs */
-function addtext(idElement, text) {
-  var area = document.getElementById(idElement);
-  var cursorPosition = area.selectionStart;
-  cursorposition(area, cursorPosition, text);
-  updatecursorposition(cursorPosition, text, area);
+/* Print page */
+function print() { window.print(); }
+
+/* Back page */
+function back() { window.history.go(-1); }
+
+/* Next page */
+function next() { window.history.go(1); }
+
+/* Reload page*/
+function reload() { window.history.go(0); }
+
+/* Add class */
+function addClass(idElement, addClass) {
+  document.getElementById(idElement).classList.add(addClass);
 }
 
-function cursorposition(area, cursorPosition, text) {
+/* Remove class */
+function removeClass(idElement, rmClass) {
+  document.getElementById(idElement).classList.remove(rmClass);
+}
+
+/* Add or remove class according to scroll */
+function classScroll(idElement) {
+  var element = document.getElementById(idElement);
+  var insertClass = element.getAttribute("data-addclass");
+  var numPx = element.getAttribute("data-scrollpx");
+  var top = window.pageYOffset || document.documentElement.scrollTop;
+  if( top > numPx ) {
+    addClass(idElement, insertClass);
+  } else {
+    removeClass(idElement, insertClass);
+  }
+}
+
+/* Add texts to inputs */
+function addText(idElement, text) {
+  var area = document.getElementById(idElement);
+  var cursorPosition = area.selectionStart;
+  // cursor position
   var front = (area.value).substring(0, cursorPosition);
   var back = (area.value).substring(cursorPosition, area.value.length);
   area.value = front + text + back;
-}
-
-function updatecursorposition(cursorPosition, text, area) {
+  // update cursor position
+  updatecursorposition(cursorPosition, text, area);
   cursorPosition = cursorPosition + text.length;
   area.selectionStart = cursorPosition;
   area.selectionEnd = cursorPosition;
-  area.focus();    
+  area.focus(); 
 }
 
 /* Save input texts */
-function savetext(idElement, nameElement) {
+function saveText(nameElement, idElement) {
   var textscreen = document.getElementById(idElement).value;
   window.localStorage.setItem(nameElement, textscreen);
 }
 
 /* Recover text and inject input */
-function recovertext(idElement, nameElement) {
+function recoverText(nameElement, idElement) {
   var text = window.localStorage.getItem(nameElement);
   if (text == null) { var text = ''; }
   addtext(idElement, text);
-  text.download = "teste.html";
+}
+
+/* Notifications */
+function notify(title, icon, text, url) {
+  Notification.requestPermission(function() {
+    var notification = new Notification(title, {
+      icon: icon_,
+      body: text
+    });
+    notification.onclick = function() { window.open(url); }
+  });
 }
