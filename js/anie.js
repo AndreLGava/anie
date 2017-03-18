@@ -1,24 +1,36 @@
 /*
-  Anie 1.2.1
+  Anie 1.3
   https://github.com/gmasson/anie
   License MIT
 */
 
 /* Display control */
-function block(id){ document.getElementById(id).style.display="block"; }
-function none(id){ document.getElementById(id).style.display="none"; }
+function block(id) {
+  document.getElementById(id).style.display="block";
+}
+function none(id) {
+  document.getElementById(id).style.display="none";
+}
 
 /* Print page */
-function print() { window.print(); }
+function print() {
+  window.print();
+}
 
 /* Back page */
-function back() { window.history.go(-1); }
+function back() {
+  window.history.go(-1);
+}
 
 /* Next page */
-function next() { window.history.go(1); }
+function next() {
+  window.history.go(1);
+}
 
 /* Reload page*/
-function reload() { window.history.go(0); }
+function reload() {
+  window.history.go(0);
+}
 
 /* Add class */
 function addClass(idElement, addClass) {
@@ -68,7 +80,9 @@ function saveText(nameElement, idElement) {
 /* Recover text and inject input */
 function recoverText(nameElement, idElement) {
   var text = window.localStorage.getItem(nameElement);
-  if (text == null) { var text = ''; }
+  if (text == null) {
+    var text = '';
+}
   addtext(idElement, text);
 }
 
@@ -79,6 +93,8 @@ function notify(title, icon, text, url) {
       icon: icon_,
       body: text
     });
-    notification.onclick = function() { window.open(url); }
+    notification.onclick = function() {
+      window.open(url);
+    }
   });
 }
